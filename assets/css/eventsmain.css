@@ -1,36 +1,108 @@
 .events{
-    position:fixed;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    background:black;
-    z-index:4;
-    color:white;
-}
-.events .side-nav{
-    height:100%;
-    width:200px;
-    left:0;
+position:fixed;
+top:0;
+left:0;
+height:100%;
+width:100%;
+background:url("../../images/splash_paint.jpg") no-repeat center center fixed;
+z-index:4;
+overflow-Y:scroll;
+font-family:agency;
 }
 
-.events .main-content .base-events-list{
-    left: 0;
-    top: 0;
+.topbar{
+position:fixed;
+top:0;
+background:rgba(0,0,0,0.5);
+width:100%;
+-webkit-transition: background 0.5s linear;
+color:#fff;
+height:2.5em;
+font-family:agency;
+}
+.topbar:hover{
+background:rgba(0,144,204,0.8);
+}
+.topbar ul{
+text-align:center;
+}
+.topbar li{
+position:relative;
+top:0.75em;
+padding:1.25em;
+display:inline;
+color:#fff;
+-webkit-transition: all 0.5s linear;
+}
+.topbar li:hover{
+text-decoration:underline;
+}
+.topbar img{
+height:1em;
 }
 
-.base-events-list li{
-    padding:10px;
+.sidebar{
+position:fixed;
+left:-15em;
+top:0;
+background:#000;
+border-right:solid 0.5em;
+border-color:rgba(0,180,255,0.8);
+height:100%;
+width:15em;
+transition: all linear 0.2s;
+text-align:center;
+color:rgba(255,255,255,0.9);
+}.sidebar:hover{
+left:0;
+border-color:rgba(0,180,255,0.6);
+}
+.sidebar .cont{
+height:100%;
+width:100%;
+background: radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 0.25em 0.25em,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 0.03125em,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0.25em 0.28125em;
+background-size:0.5em 0.5em;
+overflow-y:scroll;
+}
+.sidebar ul{
+margin:0.5em;
+}
+.sidebar li{
+background:rgba(0,180,255,0.4);
+margin:0.1em;
+width:100%;
+font-family:agency;
+font-size:1.5em;
+line-height:1.75em;
+}
+.sidebar li:hover{
+background:rgba(0,180,255,0.6);
+}
+.sidebar h2{
+font-family:bebas;
+font-size:2.5em;
+padding:1em;
+color:rgba(255,255,255,0.8);
+}
+.cont::-webkit-scrollbar{
+width: 0.4em;
 }
 
-.events .main-events{
-    position:fixed;
-    top:0;
-    background: cyan;
+.cont::-webkit-scrollbar-thumb{
+background-color: rgba(255,255,255,0.2);
 }
-.main-events ul{
-    text-align:center;
+
+tr{
+vertical-align:top;
 }
-.main-events ul li{
-    float:left;
+
+.base-event-details{
+margin:10%;
+background:rgba(255,255,255,0.8);
+padding:2em;
+display:inline-block;
+font-size:1.4em;
 }
